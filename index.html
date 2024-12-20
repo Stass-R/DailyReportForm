@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Daily Work Report Form</title>
+</head>
+<body>
+    <h1>Daily Work Report Form</h1>
+    <form action="submit_form.php" method="post">
+        <label for="worker_type">Worker Type:</label>
+        <select id="worker_type" name="worker_type" required>
+            <option value="">Select...</option>
+            <option value="teacher">Teacher</option>
+            <option value="accountant">Accountant</option>
+            <option value="teaching_assistant">Teaching Assistant/Receptionist</option>
+            <option value="manager">Manager</option>
+            <option value="director">Director</option>
+        </select>
+        <br><br>
+
+        <label for="tasks_completed">What tasks did you complete today?</label><br>
+        <textarea id="tasks_completed" name="tasks_completed" rows="4" cols="50" required></textarea>
+        <br><br>
+
+        <label for="challenges">Did you face any challenges today?</label><br>
+        <textarea id="challenges" name="challenges" rows="4" cols="50"></textarea>
+        <br><br>
+
+        <label for="feedback">Do you have any feedback or suggestions?</label><br>
+        <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea>
+        <br><br>
+
+        <label for="additional_notes">Additional Notes:</label><br>
+        <textarea id="additional_notes" name="additional_notes" rows="4" cols="50"></textarea>
+        <br><br>
+
+        <button type="submit">Submit Report</button>
+    </form>
+</body>
+</html>
